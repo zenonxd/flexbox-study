@@ -292,8 +292,6 @@ Já no flex-grow misturado, o 1 possui flex-grow 0, o 2 possui 1 e o 3 possui 2.
 Portanto, o número 3 é 2x maior que o número 2. Caso o número 2 fosse também flex-grow: 2, seria o mesmo tamanho do 3.
 
 
-
-
 ### flex-basis
 
 Indica o tamanho inicial do flex item antes da distribuição do espaço restante. Lembrando: o espaço restante é definido
@@ -357,8 +355,6 @@ conteúdo não ocupe todo esse espaço.
 
 Um item com shrink: 3 diminuirá 3 vezes mais que um item com 1.
 
-
-
 ### flex (tudo declarado junto)
 
 Atalho para as propriedades flex-grow, flex-shrink e flex-basis. Geralmente você verá a propriedade flex nos flex itens
@@ -387,8 +383,6 @@ e o flex-basis 0.
 
 flex-grow: 3, flex-shrink: 2 e flex-basis: 300px;
 
-
-
 ### order
 
 Modifica a ordem dos flex itens. Sempre do menor para o maior, assim order: 1, aparece na frente de order: 5.
@@ -402,7 +396,6 @@ Número para modificar a ordem padrão. Pode ser negativo.
 0 é o valor padrão e isso significa que a ordem dos itens será a ordem apresentada no HTML. Se você quiser colocar um
 item do meio da lista no início da mesma, sem modificar os demais, o ideal é utilizar um valor negativo para este item,
 já que todos os outros são 0.
-
 
 ### align-self
 
@@ -443,3 +436,14 @@ Veja que o item 1 recebeu o baseline e item 2 se alinhou utilizando sua linha de
 #### align-self: stretch;
 
 Estica o item.
+
+
+# Projeto Flexbog
+
+Colocando tudo em prática.
+
+## Tips
+
+Criar um container para o site padrão com uma width definida e ir settando sections dentro desse container.
+
+

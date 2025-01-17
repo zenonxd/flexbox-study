@@ -1,247 +1,225 @@
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+* {
+  box-sizing: border-box;
 
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+body, h1, h2, p, ul, li, a {
+  margin: 0px;
+  padding: 0px;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+body {
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  color: #222222;
 }
 
-/*
- * A better looking default horizontal rule
- */
+ul {
+  list-style: none;
+}
 
-hr {
+a {
+  text-decoration: none;
+}
+
+img {
   display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+  max-width: 100%;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+.superinfo-bg {
+  background-color: #122ab2;
+  color: white;
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
 
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+  a {
+    color: white;
   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+  .superinfo {
+    display: flex;
+    justify-content: space-around;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 10px;
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+    p, a {
+      margin: 0 10px 10px 10px;
+    }
   }
 }
 
+.menu-bg {
+  background-color: #2c70ff;
+
+
+  .menu {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: white;
+      transition: color 0.3s ease;
+    }
+
+    .menu-logo a {
+      font-size: 2.25em;
+      font-weight: bold;
+      margin: 0 10px;
+      padding-left: 55px;
+    }
+
+    .menu-nav {
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+        li {
+          margin-left: 20px;
+
+          a {
+            font-size: 1.25em;
+            display: block;
+            padding: 10px;
+          }
+
+          a:hover {
+            color: #122ab2;
+          }
+        }
+      }
+    }
+
+
+
+  }
+}
+
+.introducao {
+  font-size: 3em;
+  line-height: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px 60px 55px;
+}
+
+.sobre {
+  border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px 10px 60px 40px;
+  display: flex;
+  flex-wrap: wrap;
+
+
+  .sobre-info {
+    /*grow 2, shrink 1, 300 min largura*/
+    flex: 2 1 300px;
+    margin: 0 10px;
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: .5em;
+    }
+
+    p {
+      font-size: 1.25em;
+      line-height: 1.4;
+      margin-bottom: 1em;
+      color: #7c7c7c;
+    }
+  }
+
+  .sobre-img {
+    /*vai diminuir até 160px*/
+    flex: 1 1 160px;
+    margin: 0 10px;
+    width: 100%;
+  }
+}
+
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+
+  h1 {
+    font-size: 3em;
+    margin: 60px 60px 60px 50px;
+  }
+
+  .produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .purple {
+      border-top: 8px solid #ae81ff;
+
+    }
+
+    .pink {
+      border-top: 8px solid #f9265e;
+    }
+
+    .blue {
+      border-top: 8px solid #66d9eb;
+
+    }
+
+    .produtos-item {
+      margin: 10px;
+      flex: 1 1 175px;
+
+      h2 {
+        font-size: 3em;
+        color: #a4a4a4;
+        background-color: #f7f7f7;
+        padding: 60px 20px;
+
+
+      }
+    }
+
+  }
+}
+
+.preco {
+  background-color: rgba(147, 147, 147, 0.2);
+  margin-top-top: 80px;
+
+  display: flex;
+  justify-content: center;
+
+  .preco-item {
+    margin: 20px;
+    border: 3px solid white;
+    padding: 40px 60px 40px 60px;
+
+    h2 {
+      font-size: 3.25em;
+      color: #a1a1a1;
+    }
+
+    span {
+      color: black;
+      font-weight: bold;
+      font-size: 2.5em;
+      margin-left: 20px;
+    }
+
+    ul {
+      font-style: italic;
+      color: #a1a1a1;
+      font-size: 1.25em;
+    }
+  }
+}
