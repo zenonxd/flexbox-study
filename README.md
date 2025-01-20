@@ -8,6 +8,14 @@ Curso lecionado pelo André Rafael, da Origamid.
 
 [Site referência - Guia Completo Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
 
+## Tips
+
+Criar um container para o site padrão com uma width definida e ir settando sections dentro desse container.
+
+Utilizar o flex-wrap quando não couber mais conteúdo.
+
+Utilizar o flex-basis para settar um width mínimo para o conteúdo.
+
 # Flex Container x Flex Item
 
 Existem dois tipos de grupo, os containers e os items, começaremos primeiro com todas as propriedades do container.
@@ -246,7 +254,6 @@ Cria um espaçamento entre as linhas. Os espaçamentos do meio são duas vezes m
 
 ![img_28.png](img_28.png)
 
-
 ## Flex Item
 
 Agora, vamos para os flex-itens. São filhos diretos do flex-container, lembrando que uma tag se torna flex-container
@@ -436,14 +443,3 @@ Veja que o item 1 recebeu o baseline e item 2 se alinhou utilizando sua linha de
 #### align-self: stretch;
 
 Estica o item.
-
-
-# Projeto Flexbog
-
-Colocando tudo em prática.
-
-## Tips
-
-Criar um container para o site padrão com uma width definida e ir settando sections dentro desse container.
-
-
